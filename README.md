@@ -1,4 +1,6 @@
-# gram_schmidt_tester
+# randomized-gram-schmidt
+
+*This repository contains part of the work I carried out during my internship at Ansys France (part of Synopsys). The implementation developed here was later integrated into Ansys's eigensolvers.*
 
 A Python testbed for comparing deterministic and randomized Gram-Schmidt
 orthogonalization methods on the same input matrix. The randomized Gram-Schmidt algorithms are inspired by the paper "Randomized Orthogonalization Process With Reorthogonalization"
@@ -69,8 +71,8 @@ Use an existing NumPy input and sparse metric:
 
 ```powershell
 python main.py `
-    --A-file ..\data\A1000_30_wing.npy `
-    --M-file ..\data\M1000_wing.npz `
+    --A-file Path\A.npy `
+    --M-file Path\M.npz `
     --k 1000 `
     --compactMGS `
     --output-dir gs_results\supplied
@@ -83,8 +85,8 @@ Matrix Market files can be used for either input:
 
 ```powershell
 python main.py `
-    --A-file ..\data\A.mmf `
-    --M-file ..\data\M.mmf `
+    --A-file Path\A.mmf `
+    --M-file Path\M.mmf `
     --k 1000 `
     --output-dir gs_results\matrix_market
 ```
