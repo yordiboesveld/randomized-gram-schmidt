@@ -1,0 +1,7 @@
+__pycache__/
+gs_optimized_results/
+gs_generalized_results/
+gs_results/
+*.pyc
+*.pyo
+*.pyd
